@@ -1,0 +1,323 @@
+@import url("../style/header.css");
+@import url("../style/footer.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.signUp {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: conic-gradient(from 265.39deg at 50% 49.93%, #cc7272 -217.04deg, #91dbd0 142.92deg, #6768d3 142.96deg, #CC790E 502.92deg);
+}
+
+.signUp .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    box-shadow: 0 4px 40px rgba(116, 124, 153, 0.74);
+    border-radius: 10px;
+    background: #377c70;
+}
+.signUp  .tittle {
+    font-size: 36px;
+    color: white;
+    margin-top: 20px;
+}
+
+.signUp  input:focus {
+    outline: 1px solid #e1f0e6;
+}
+.signUp  .input_text{
+    width: 354px;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.signUp .input_password {
+    width: 354px;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    font-style: italic;
+    padding-left: 10px;
+
+}
+
+.signUp .input_email {
+    width: 354px;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    font-style: italic;
+    padding-left: 10px;
+
+}
+
+.signUp  .signUp_select {
+    width: 354px;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.signUp  .signUp_select {
+    font-size: 16px;
+    padding: 18px 0 18px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    border: none;
+    font-style: italic;
+    background-image: url(./image/log.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    margin-top: 15px;
+
+}
+
+.signUp  label {
+    font-size: 20px;
+    display: flex;
+    font-weight: 400;
+  }
+.signUp  fieldset {
+    border: none;    
+  }
+.signUp .signUp_field {
+    display: flex;
+    color: #FFFFFF;
+    font-style: italic;
+    margin-top: 15px;
+  }
+.signUp .fake_checkbox {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    background-color: white;
+  }
+
+.signUp .real_checkbox {
+    display: none;
+  }
+
+.signUp  .label_text {
+    padding-left: 20px;
+    width: 326px;
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+
+.signUp  .real_checkbox:checked ~ label .fake_checkbox {
+    background-image: url(./image/checkbox.svg);
+    
+    background-repeat: no-repeat;
+    background-position: 5px 8px;
+  }
+
+.signUp .register_btn {
+    width: 354px;
+    height: 57px;
+    font-size: 20px;
+    background: #8A8A8A;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.signUp  .register_btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.signUp  .subtitle {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:532px) {
+    .box {
+    width: 90vw;
+    }
+
+    .input_text {
+        width: 90%;
+    }
+    
+    .input_password {
+        width: 90%;
+    }
+
+    .input_email {
+        width: 90%;
+    }
+
+    .signUp_select {
+        width: 90%;
+    }
+
+    .label_text {
+        width: 90%;
+      
+        font-size: 13px;
+    }
+
+    .register_btn {
+        width: 90%;
+    }
+
+    .label_field {
+        width: 90%;
+    }
+
+    .fake_checkbox {
+        margin-left: 10px;
+    }
+}
+.modal{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 100 !important;
+    background: rgba(45, 45, 45, 0.46) !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.modal .modalcd{
+    position: relative!important;
+    z-index: 101 !important;
+    width: 80vw !important;
+    height: 700px !important;
+    background: url(".././img/Rectangle 50.png") !important;
+    display: flex !important;
+    border-radius: 20px !important;
+}
+.modal .box{
+    height: 90% !important;
+    width: 33vw;
+    background: #FFFFFF !important;
+    margin: 0 20px !important;
+    border-radius: 20px !important;
+}
+.top .text h4{
+    color: #FFFFFF !important;
+}
+.box .top .text{
+    height: 250px !important;
+    text-transform: uppercase !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    background: rgba(0, 0, 0, 0.56) !important;
+    border-radius: 20px 20px 0 0 !important;
+    width: 100% !important;
+}
+.modal .box  .bottom ul{
+    padding: 20px !important;
+    text-align: center !important;
+}
+.modal .box  .bottom li{
+    border-bottom: black 2px solid !important;
+    margin: 20px 0 !important;
+}
+.modal .box  .button{
+    display: flex !important;
+    justify-content: center !important;
+    padding: 10px 20px !important;
+}
+.modal .box .button a{
+    padding: 10px 20px;
+    background: transparent !important;
+    border: 4mm ridge gray !important;
+    border-radius: 0 !important;
+    color: gray !important;
+    font-size: 14px !important;
+    transition: 1s !important;
+}
+.modal .box .button a:hover{
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px black !important;
+}
+.modal .box  .bottom{
+    width: 100% !important;
+    line-height: 40px !important;
+}
+.modal .box:nth-child(1) a{
+    margin-top: 170px !important;
+}
+.modal .box:nth-child(2) a{
+    margin-top: 50px !important;
+}
+.modal .box:nth-child(3) a{
+    margin-top: 0 !important;
+}
+.modal .box:nth-child(1) .top{
+    background-image: url("../img/construction-4794329_960_720.webp") !important;
+    background-size: cover !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+.modal .box:nth-child(2) .top{
+    background: url("https://turanpress.kz/upload/000/u2/b/3/stroika-i-migracija-v-almaty-photo-big.jpg") !important;
+    background-size: cover !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+.modal .box:nth-child(3) .top{
+    background: url("https://st.depositphotos.com/1017950/1582/i/600/depositphotos_15821271-stock-photo-great-bargain.jpg") !important;
+    background-size: cover !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+.modal .bg2{
+    background: darkorange !important;
+    color: black !important;
+    border-radius: 10px !important;
+}
+.modal .bg3{
+    background: gold !important;
+    color: red !important;
+    font-weight: 1000 !important;
+    border-radius: 10px !important;
+}
+.modal .color1{
+    background: darkorange !important;
+    color: black !important;
+}
+.modal .color2{
+    background: gold !important;
+    color: red !important;
+}
+.modal{
+    display: none;
+}
+.modal a{
+    text-decoration: none !important;
+}

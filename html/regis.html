@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./regis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <a href="../index.html">
+        <img
+                src="../img/logo.svg"
+                class="logo">
+    </a>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a href="../index.html">Главная</a></li>
+            <li>
+                <div class="lon"><a class="menu__item lon" href="">Обратная связь</a></div></li>
+
+            <li><a class="menu__item" href="./sign-up.html">Логин</a></li>
+        </ul>
+    </div>
+</header>
+    <section class="signUp">
+        <div class="box">
+            <div class="tittle">Регистрация</div>
+            <input type="text"
+            placeholder=" Имя пользователя"
+            class="input_text">
+            <input type="password"
+            placeholder="Пароль"
+            class="input_password">
+            <input type="password"
+            placeholder="Повторите пароль"
+            class="input_password">
+            
+            <input type="text"
+            placeholder="Email"
+            name="email"
+            class="input_email">
+
+            <input type="text"
+                   placeholder="Персональный номер"
+                   name="email"
+                   class="input_email">
+    
+            <select class="signUp_select" name="gorod" id="">
+                <option value=""
+                class="option1">Город</option>
+                <option value="">Бишкек</option>
+                <option value="">Ош</option>
+            </select>
+
+            <fieldset>
+                <div class="signUp_field">
+                  <input type="checkbox" name="q1" id="q1-1" class="real_checkbox" onclick="main()"/>
+                  <label for="q1-1" class="label_field">
+                    <div class="fake_checkbox"></div>
+                    <div class="label_text">
+                      Я подтверждаю, что хочу получать рассылку для пользователей
+                      данного сайта
+                    </div>
+                  </label>
+                </div>
+              </fieldset>
+              <button class="register_btn" id="index" disabled onclick="modalb()">Зарегистрироваться</button>
+              <div class="subtitle">Уже есть аккаунт? <a href="./sign-up.html">Войти</a></div>
+        </div>
+    </section>
+    <div class="modal" id="modal_op" onclick="modaln()">
+        <div class="modalcd">
+            <div class="box">
+                <div class="top">
+                    <div class="text">
+                        <h4>бесплатные</h4>
+                        <h4>0%</h4>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>Можете добавть заказ</li>
+                    </ul>
+                </div>
+                <div class="button"><a href="../table/table.html">пройти в объявлениям</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="text">
+                        <h4>Мастер</h4>
+                        <h4>10%</h4>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>Можете добавть заказ</li>
+                        <li class="bg2">Можете найти работу как Мастер</li>
+                        <li class="bg2">Сделать на 90% безопасную сделки</li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <a href="../table/table.html">пройти в объявлениям <span class="color1">10%</span></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="text">
+                        <h4>безопасную</h4>
+                        <h4>15%</h4>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>Можете добавть заказ</li>
+                        <li>Можете найти работу как Мастер</li>
+                        <li class="bg3">Сделать на 100% безопасную сделки</li>
+                    </ul>
+                </div>
+                    <div class="button">
+                        <a href="../table/table.html">
+                            пройти в объявлениям <span class="color2">15%</span>
+                        </a>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="navigation">
+                <a href="">страницы</a>
+                <a href="">заказы</a>
+                <a href="">Ресурсы</a>
+                <a href="">Помощь</a>
+            </div>
+        </div>
+        <div class="social">
+            <div class="social-content">
+                <div class="social-item">
+                    <img src="../img/span.svg" alt="">
+                    <a href="">Facebook</a>
+                </div>
+                <div class="social-item">
+                    <img src="../img/span (2).svg" alt="">
+                    <a href="">Youtube</a>
+                </div>
+                <div class="social-item">
+                    <img src="../img/span (1).svg" alt="">
+                    <a href="">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="apps">
+            <h4>Загрузите мобильное приложение <span>USTA</span> </h4>
+            <div class="downoload">
+                <a href="">
+                    <img src="./images/ios.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./images/android.svg" alt="">
+                </a>
+            </div>
+            <hr>
+        </div>
+
+
+    </div>
+</footer>
+
+    <script>
+            function modalb() {
+            document.getElementById("modal_op").style.display = "flex"
+        }
+            function modaln() {
+            document.getElementById("modal_op").style.display = "none"
+        }
+        function main() {
+                document.getElementById("index").disabled = false
+                document.getElementById("index").style.background="blue"
+                document.getElementById("index").style.color="#fff"
+            }
+    </script>
+
+    </script>
+</body>
+</html>

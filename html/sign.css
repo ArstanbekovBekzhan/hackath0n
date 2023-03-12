@@ -1,0 +1,235 @@
+@import url("../style/header.css");
+@import url("../style/footer.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.sing-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    background: conic-gradient(from 265.39deg at 50% 49.93%, #cc7272 -217.04deg, #91dbd0 142.92deg, #6768d3 142.96deg, #CC790E 502.92deg);
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    background: #377c70 !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+h2 {
+    color: white !important;
+    width: 49px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+#login {
+    width: 354px;
+    height: 60px;
+    border: 1px solid #C7C7C7;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 41px;
+    padding: 20px 0;
+
+}
+.password {
+    width: 354px;
+    height: 60px;
+    border: 1px solid #C7C7C7;
+    border-radius: 10px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+button {
+    width: 354px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF; 
+    background: #8A8A8A;
+    border: 1px solid #263238;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+}
+div {
+    color: white;
+    margin-top: 41px;
+}
+
+@media screen and (max-width:733px) {
+    .sing-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: conic-gradient(from 265.39deg at 50% 49.93%, #cc7272 -217.04deg, #91dbd0 142.92deg, #6768d3 142.96deg, #CC790E 502.92deg);
+    }
+    .box {
+        width: 90vw;
+        height: 400px;
+        background: #377c70;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    #login {
+        width: 70vw;
+        height: 60px;
+    }
+    .password {
+        width: 70vw; 
+    }
+    button {
+        width: 70vw; 
+    }
+    div {
+        padding-bottom: 20px;
+    }
+    
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(45, 45, 45, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalcd{
+    width: 80vw;
+    height: 700px;
+    background: url("../img/Rectangle 50.png");
+    display: flex;
+    border-radius: 20px;
+}
+.box{
+    height: 90%;
+    background: #FFFFFF;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+.box .top,.box .top .text h4{
+    color: #FFFFFF;
+}
+.box .top,.box .top .text{
+    height: 250px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.box .top, .box .top img{
+    height: 250px;
+    width: 100%;
+}
+.box  .bottom ul{
+    padding: 20px;
+    text-align: center;
+}
+.box  .bottom li{
+    border-bottom: black 2px solid;
+    margin: 20px 0;
+}
+.box  .button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.box .button button{
+    width: 300px;
+    height: 60px;
+    background: transparent;
+    border: 4mm ridge gray;
+    border-radius: 0;
+    color: gray;
+    font-size: 14px;
+    transition: 1s;
+}
+.box .button button:hover{
+    width: 270px;
+    height: 60px;
+    box-shadow: 2px 2px 2px black;
+}
+.box  .bottom{
+    width: 100%;
+    line-height: 40px;
+}
+.box:nth-child(1) button{
+    margin-top: 170px;
+}
+.box:nth-child(2) button{
+    margin-top: 0;
+}
+.box:nth-child(3) button{
+    margin-top: 0;
+}
+.box:nth-child(1) .top{
+    background: url("https://cdn.pixabay.com/photo/2020/01/26/11/14/construction-4794329_960_720.png");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.box:nth-child(2) .top{
+    background: url("https://turanpress.kz/upload/000/u2/b/3/stroika-i-migracija-v-almaty-photo-big.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.box:nth-child(3) .top{
+    background: url("https://st.depositphotos.com/1017950/1582/i/600/depositphotos_15821271-stock-photo-great-bargain.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.bg2{
+    background: darkorange;
+    color: black;
+    border-radius: 10px;
+}
+.bg3{
+    background: gold;
+    color: red;
+    font-weight: 1000;
+    border-radius: 10px;
+}
+.color1{
+    background: darkorange;
+    color: black;
+}
+.color2{
+    background: gold;
+    color: red;
+}
+.modal{
+    display: none;
+}
+a{
+    text-decoration: none;
+}

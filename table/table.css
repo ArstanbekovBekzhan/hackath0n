@@ -1,0 +1,120 @@
+@import url("../style/header.css");
+@import url("../style/footer.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+}
+table {
+    padding: 80px 0 !important;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align-last: left;
+}
+
+tbody tr {
+    border-bottom: 1pt solid black;
+}
+
+@media (max-width: 600px) {
+    table {
+        background-color: pink;
+    }
+    th {
+        display: none;
+    }
+    td {
+        display: inline-block;
+    }
+    td:last-child {
+        width: 100%;
+    }
+
+}
+.head{
+    background: #55F4B7;
+    border-radius: 20px;
+    margin-top:  100px !important;
+}
+.head,
+.bod a{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+
+}
+.bod{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+.bod div{
+    margin: 20px 0;
+}
+ h3, h2 {
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background: gold;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+}
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 46px;
+}
+.main{
+    display: inline-flex;
+    padding: 80px 0;
+}
+.main button{
+    background: green;
+    color: white;
+    padding: 20px 80px;
+    text-transform: uppercase;
+}
+.main p, button{
+    margin: 20px;
+    font-size: 17px;
+    color: #424141;
+}
+.main img{
+    height: 600px;
+}
+.ll{
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 2px transparent !important;
+}
+.ww{
+    background: #0048ff;
+    border-radius: 20px;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 2px black;
+}
+.lln{
+    background: red !important;
+}
+.jjj{
+    background-color: #FFA500 !important;
+}

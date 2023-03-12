@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.section4{
+    background: url("../imageBack/section background.png");
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 100px;
+}
+
+.container2{
+    margin-top: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box{
+    margin-top: 20px;
+    width: 665px;
+    background-color: white;
+}
+
+.orange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 118px;
+}
+.orangeLogo{
+    width: 40vw;
+}
+.cuate{
+    width: 20vw;
+    height: 238px;
+    margin-bottom: 34px;
+    margin-top: 25px;
+}
+.store{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 38px;
+}
+.appStore{
+    margin-right: 27px;
+}
+.buttonApp{
+    width: 304px;
+    height: 50px;
+    background: #B1A2F9;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    border: none;
+}
+
+button.buttonApp:active{
+    transform: scale(0.98);
+}
+
+button.buttonApp:hover{
+    border: solid 2px #9747ff;
+}
+
+.green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 118px;
+}
+
+.pana{
+    width: 20vw;
+    height: 270px;
+    margin-bottom: 37px;
+    margin-top: 35px;
+}
+.business{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -5px;
+}
+@media screen and (max-width: 565px) {
+    .container2{
+        margin-top: 70vh;
+    }
+}

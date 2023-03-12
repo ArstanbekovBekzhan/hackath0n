@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.section6 {
+    background-image: url("../img/info_bg.png");
+    height: 527px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.info {
+    width: 100%;
+    height: 282px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_title {
+    font-weight: 700;
+    /* font-size: 3.40vw; */
+    font-size: 49px;
+    width: 626px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section6_small {
+    background-image: url("../img/info_bg_small.png");
+    height: 150px;
+    display: none;
+}
+
+.info_small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_title_small {
+
+    font-weight: 700;
+    font-size: 20px;
+    width: 206px;
+    padding-top: 16px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.section7 {
+
+    background: linear-gradient(180deg, #9CA5AF 0%, #4E5A65 100%);
+}
+
+.subInfo {
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 41px 23%;
+    text-align: center;
+}
+
+
+.section8 {
+    background-color: #192129;
+    height: 164px;
+    width: 100%;
+}
+
+.pictures {
+    display: flex;
+    width: 596px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pictures_small {
+    display: flex;
+
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .section6 {
+        height: 400px;
+    }
+
+    .info_title {
+        font-size: 35px;
+        width: 341px;
+    }
+    .subInfo {
+        color: #FFFFFF;
+        font-size: 24px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 10%;
+    }
+
+    .section8 {
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .pictures {
+        display: none;
+    }
+
+    .pictures_small {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .info_title {
+        font-size: 20px;
+    }
+
+    .section6 {
+        display: none;
+    }
+
+    .section6_small {
+        display: block;
+    }
+
+    .subInfo {
+        color: #FFFFFF;
+        font-size: 10px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 17px;
+    }
+}
